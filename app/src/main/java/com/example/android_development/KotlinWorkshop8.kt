@@ -43,7 +43,7 @@ fun main(){
       println(Person.maxLength)
 
     //TODO 5: Раскомментируй это после выполнения TODO 3
-     list.replacePlacesWithThePhoneCode(p, 4)
+    // list.replacePlacesWithThePhoneCode(p, 4)
 }
 
 
