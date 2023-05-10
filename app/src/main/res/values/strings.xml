@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Android-development</string>
+    <string name="link">link</string>
+    <string name="welcome_to_the_best_app">Welcome!</string>
+    <string name="battery_charge">battery charge</string>
 </resources>
