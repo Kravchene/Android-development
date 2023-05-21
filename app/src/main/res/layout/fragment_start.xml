@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/StartFragment"
+    android:background="@drawable/__2_"
+    android:visibility="visible"
+    tools:context=".StartFragment">
+
+        <TextView
+            android:id="@+id/max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Максимальное значение"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#DCCFCF"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/maximumValue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/startingValue"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="HardcodedText,MissingConstraints,TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Минимальное значение"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#DCCFCF"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/startingValue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Hello"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="HardcodedText,MissingConstraints,TextSizeCheck" />
+
+        <EditText
+            android:id="@+id/maximumValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/startingValue"
+            app:layout_constraintVertical_bias="0.081"
+            tools:ignore="LabelFor,MissingConstraints,SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/startingValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="468dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:inputType="number"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintVertical_bias="0.323"
+            tools:ignore="LabelFor,MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/randomValueButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="random"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/maximumValue"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+        <TextView
+            android:id="@+id/Hello"
+            android:paddingTop="10dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:includeFontPadding="false"
+            android:text="Добро пожаловать в генератор случайных чисел"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#DCCFCF"
+            android:textIsSelectable="false"
+            android:textSize="24sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="HardcodedText,MissingConstraints,VisualLintOverlap" />
+
+        <LinearLayout
+            android:layout_width="195dp"
+            android:layout_height="98dp"
+            android:layout_marginTop="392dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/Hello">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:textColor="@color/white" />
+        </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
