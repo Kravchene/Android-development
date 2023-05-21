@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Android-development</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="button">Button</string>
+    <string name="random">Random</string>
+    <string name="error">Ошибка вы не вели какое то из значений или стартовое число меньше последнего</string>
+    <string name="last">"Последнее число"</string>
+    <string name="back">Назад</string>
 </resources>
