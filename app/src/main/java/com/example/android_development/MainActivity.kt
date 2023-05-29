@@ -14,6 +14,7 @@ private val intData:ValueIntRandom by viewModels()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        //Еще не проходили, но вопрос: что ты выполняешь при обзерве message ?) 
         intData.message.observe(this,{})
 
 
