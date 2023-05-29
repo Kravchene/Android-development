@@ -33,6 +33,7 @@ class StartFragment : Fragment(), NavigationApplication {
 
 
         with(binding) {
+            //Какой тип будет у переменной a и для чего мы ее создаем ?) 
             val a = randomValueButton.setOnClickListener {
                 if (startingValue.text.isEmpty() || maximumValue.text.isEmpty()) {
                     findNavController().navigate(R.id.action_startFragment_to_errorFragment2)
@@ -49,6 +50,8 @@ class StartFragment : Fragment(), NavigationApplication {
             }
             if (textView5.text.isEmpty()) {
                 intData.message.observe(activity as LifecycleOwner) {
+                    //Что за textView4 и textView5 ?
+                    //Не забываем про нейминги
                     textView5.text = it.toString()
                     textView4.text = getText(R.string.last)
                 }
