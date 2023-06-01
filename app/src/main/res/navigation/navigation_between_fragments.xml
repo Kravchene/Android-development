@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_between_fragments"
+    app:startDestination="@id/authorizationFragment">
+
+    <fragment
+        android:id="@+id/authorizationFragment"
+        android:name="com.example.android_development.AuthorizationFragment"
+        android:label="fragment_authorization"
+        tools:layout="@layout/fragment_authorization" >
+        <action
+            android:id="@+id/action_authorizationFragment_to_websiteFragment"
+            app:destination="@id/websiteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/websiteFragment"
+        android:name="com.example.android_development.WebsiteFragment"
+        android:label="fragment_website"
+        tools:layout="@layout/fragment_website" >
+        <action
+            android:id="@+id/action_websiteFragment_to_authorizationFragment"
+            app:destination="@id/authorizationFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

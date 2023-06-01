@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">Android-development</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Hello">Welcome back</string>
+    <string name="Explanation">Enter your credential to continue</string>
+    <string name="Register">Register</string>
+    <string name="No_account">Don’t have account? Sign up</string>
+    <string name="Log_in">Log in</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="email_or_us">Email or username</string>
+    <string name="password">Password</string>
+    <string name="personal_page">Personal page</string>
+    <string name="_22">22</string>
+    <string name="_20k">20K</string>
+    <string name="_125">125</string>
+    <string name="posts">Posts</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="username">Username</string>
+    <string name="address">Address</string>
+    <string name="description">Description</string>
+    <string name="directions">DIRECTIONS</string>
+    <string name="call">CALL</string>
+    <string name="save">SAVE</string>
+    <string name="website">WEBSITE</string>
+    <string name="linkWebsite">https://developer.alexanderklimov.ru/android/views/recyclerview-kot.php</string>
 </resources>
