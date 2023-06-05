@@ -6,7 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".AuthorizationFragment">
 
+    <!--    Смотри, этот экран необходимо было сделать через LinearLayout, ConstraintLayout это конечно хорошо,-->
+    <!--    но с Linear тоже нужно уметь работать, так как он наверное второй по популярности контейнер-->
+    <!--    Поэтому попробуй переделать на него-->
 
+    <!--Второе это EditText-->
+    <!--    Нужно было использовать TextInputLayout и TextInputEditText, тогда бы не пришлось создавать отдельные view-->
+    <!--    для иконок и контейнеров (app:endIconMode="password_toggle" и app:startIcon у TextInputLayout)-->
+    <!--    https://www.digitalocean.com/community/tutorials/android-textinputlayout-example-->
     <EditText
         android:id="@+id/password"
         android:layout_width="170dp"
@@ -196,6 +203,5 @@
         app:layout_constraintBottom_toBottomOf="@+id/Entering_a_password"
         app:layout_constraintEnd_toEndOf="@+id/Entering_a_password"
         app:layout_constraintTop_toTopOf="@+id/Entering_a_password" />
-<!--test-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -24,8 +24,6 @@
         android:id="@+id/account"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/sora_semibold"
-
         android:textColor="@color/frame"
         android:textSize="16sp"
         app:layout_constraintEnd_toStartOf="@id/back"
@@ -45,6 +43,7 @@
         tools:layout_editor_absoluteX="358dp"
         tools:layout_editor_absoluteY="16dp" />
 
+    <!--  Почему  layout_width не сделать 0dp ? -->
     <View
         android:id="@+id/line"
         android:layout_width="415dp"
@@ -102,6 +101,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Description" />
 
+
+    <!-- Не совсем понял почему именно app:layout_constraintBottom_toTopOf="@+id/line"   -->
+    <!--    -->
     <View
         android:id="@+id/view16"
         android:layout_width="40dp"
@@ -168,7 +170,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="71dp"
-        android:fontFamily="@font/roboto_bold"
+
         android:text="@string/directions"
         android:textColor="@color/blue"
         android:textSize="14sp"
@@ -184,7 +186,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="35dp"
         android:layout_marginTop="68dp"
-        android:fontFamily="@font/roboto_bold"
+
         android:gravity="center"
         android:text="@string/call"
         android:textColor="@color/blue"
@@ -202,7 +204,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="45dp"
         android:layout_marginTop="71dp"
-        android:fontFamily="@font/roboto_bold"
+
         android:gravity="center"
         android:text="@string/save"
         android:textColor="@color/blue"
@@ -220,7 +222,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24.3dp"
         android:layout_marginTop="71dp"
-        android:fontFamily="@font/roboto_bold"
+
         android:gravity="center"
         android:text="@string/website"
         android:textColor="@color/blue"
@@ -238,7 +240,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="37dp"
-        android:fontFamily="@font/sora_semibold"
+
         android:text="@string/personal_page"
         android:textColor="@color/frame"
         android:textSize="32sp"
@@ -250,7 +252,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:fontFamily="@font/sora_semibold"
+
         android:text="@string/username"
         android:textColor="@color/frame"
         android:textSize="16sp"
@@ -262,7 +264,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:fontFamily="@font/sora_light"
         android:text="@string/address"
         android:textColor="@color/frame"
         android:textSize="14sp"
@@ -274,7 +275,7 @@
         android:id="@+id/Description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/sora_light"
+
         android:text="@string/description"
         android:textColor="@color/frame"
         android:textSize="14sp"
@@ -288,7 +289,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="21dp"
         android:layout_marginTop="3dp"
-        android:fontFamily="@font/sora_light"
+
         android:lineHeight="17.64dp"
         android:text="@string/following"
         android:textColor="@color/frame"
@@ -302,7 +303,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="109dp"
         android:layout_marginTop="3dp"
-        android:fontFamily="@font/sora_light"
+
         android:lineHeight="17.64dp"
         android:text="@string/posts"
         android:textColor="@color/frame"
@@ -316,7 +317,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="23dp"
         android:layout_marginTop="3dp"
-        android:fontFamily="@font/sora_light"
+
         android:lineHeight="17.64dp"
         android:text="@string/followers"
         android:textColor="@color/frame"
@@ -324,13 +325,15 @@
         app:layout_constraintStart_toEndOf="@+id/Posts"
         app:layout_constraintTop_toBottomOf="@+id/number_20K" />
 
+
+    <!-- Можно было привязать top к avatar и bottom к avatar, и тогда можно было бы обойтись без marginTop-->
     <TextView
         android:id="@+id/number_125"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="119dp"
         android:layout_marginTop="107dp"
-        android:fontFamily="@font/sora_light"
+
         android:lineHeight="17.64dp"
         android:text="@string/_125"
         android:textColor="@color/frame"
@@ -344,7 +347,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="72dp"
         android:layout_marginTop="107dp"
-        android:fontFamily="@font/sora_light"
+
         android:lineHeight="17.64dp"
         android:text="@string/_22"
         android:textColor="@color/frame"
@@ -358,7 +361,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginTop="107dp"
-        android:fontFamily="@font/sora_light"
         android:lineHeight="17.64dp"
         android:text="@string/_20k"
         android:textColor="@color/frame"
@@ -389,6 +391,8 @@
         app:layout_constraintEnd_toEndOf="@+id/imageView6"
         app:layout_constraintStart_toStartOf="@+id/imageView6"
         app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+    <!-- Иконки нужно было скорее привязать к соответствующему им тексту, чтобы было по центру относительно текста -->
 
     <ImageView
         android:id="@+id/coll_icon"
