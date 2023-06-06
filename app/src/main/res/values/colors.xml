@@ -2,4 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="Log_in">#FFCA42</color>
+    <color name="LogInText">#10405A</color>
+    <color name="frame">#1F5460</color>
+    <color name="gray">#C4C4C4</color>
+    <color name="blue">#4285F4</color>
 </resources>
