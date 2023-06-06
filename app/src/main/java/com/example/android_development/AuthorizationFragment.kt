@@ -5,10 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.activityViewModels
-import androidx.navigation.NavController
-import androidx.navigation.fragment.findNavController
 import com.example.android_development.databinding.FragmentAuthorizationBinding
 
 class AuthorizationFragment : Fragment() {
@@ -17,20 +14,20 @@ class AuthorizationFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentAuthorizationBinding.inflate(layoutInflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        with (binding){
-            buttonLog.setOnClickListener{
-                if (emailOrUs.text.isEmpty()||password.text.isEmpty()){
-                }else{
-                    dataAccount.message.value =emailOrUs.text.toString()
+        with(binding) {
+            buttonLog.setOnClickListener {
+                if (emailOrUs.text!!.isEmpty() || password.text!!.isEmpty()) {
+                } else {
+                    dataAccount.message.value = emailOrUs.text.toString()
                     requireActivity().supportFragmentManager.beginTransaction()
-                        .replace(R.id.container,WebsiteFragment()).commit()
+                        .replace(R.id.container, WebsiteFragment()).commit()
                 }
             }
         }
