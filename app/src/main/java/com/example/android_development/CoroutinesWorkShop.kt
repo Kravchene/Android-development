@@ -58,6 +58,7 @@ suspend fun main() {
             delay(1000L)
             println("Last step.")
         }.join()
+        //Интересное решение добавить join (я изначально имел ввиду поменять launch на withContext)
         println("Coroutine TODO 4 end")
     }
     jobFinal.join()
