@@ -18,6 +18,7 @@ class AnimalsViewModel(private val repository: AnimalsRepository): ViewModel() {
     private val _state: MutableLiveData<ValidateState> = MutableLiveData(ValidateState.DEFAULT)
     val state: LiveData<ValidateState> = _state
 
+    //Похвально, что сразу LiveData
     val animals: LiveData<List<Animal>> = repository.getAllAnimasLiveData()
 
     fun insertAnimal(

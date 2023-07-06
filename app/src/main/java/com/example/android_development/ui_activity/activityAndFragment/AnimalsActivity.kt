@@ -31,7 +31,7 @@ class AnimalsActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         tabLayout = findViewById(R.id.tabMode)
-        viewPager2 = findViewById(R.id.viewPager2)
+        viewPager2 = findViewById(R.id.viewPager2) //findViewById ? почему не binding.viewPager2
 
         adapter = FragmentPageAdapter(this)
         viewPager2.adapter = adapter

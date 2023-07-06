@@ -14,8 +14,9 @@ data class Animal(
     val age: Int,
     val weight: Double,
     val description: String,
-    val avatar: Int ,
-    val createdAt: String,
+    val avatar: Int,
+    val createdAt: String, // Можем сразу его заполнять как System.currentTimeMillis, и лучше изменить на Long
+//    val createdAt: Long = System.currentTimeMillis(),
     @PrimaryKey(autoGenerate = true)
     val id: Int = 0
 )

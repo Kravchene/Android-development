@@ -36,6 +36,7 @@ class AnimalsFragment : Fragment() {
             recyclerView.layoutManager = LinearLayoutManager(activity)
             recyclerView.adapter = adapter
             recyclerView.setItemViewCacheSize(3)
+            //А почему решил именно 3 ?
         }
         viewModel = ViewModelProvider(
             this,
@@ -44,6 +45,12 @@ class AnimalsFragment : Fragment() {
         viewModel.animals.observe(viewLifecycleOwner) { animals ->
             adapter.setData(animals)
         }
+        /*
+        Можно пользоваться вариантом чуть короче
+        viewModel.animals.observe { animals ->
+            adapter.setData(animals)
+        }
+         */
     }
 
 

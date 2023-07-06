@@ -90,6 +90,8 @@ class AddAnimalFragment : Fragment(), AdapterView.OnItemSelectedListener {
                     DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SS")
                         .withZone(ZoneOffset.UTC)
                         .format(Instant.now()),
+                    //Теперь понял почему string. Но правильней будет записывать в бд просто long, а уже в adapter его
+                    // отображать как тебе захочется
                 )
             }
             removeAllAnimals.setOnClickListener {
